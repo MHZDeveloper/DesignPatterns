@@ -9,13 +9,6 @@ public class User {
     private LocalDate birthday;
     private Address address;
 
-    public User(String firstName, String lastName, LocalDate birthday, Address address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthday = birthday;
-        this.address = address;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -30,5 +23,21 @@ public class User {
 
     public Address getAddress() {
         return address;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

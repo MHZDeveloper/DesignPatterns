@@ -16,7 +16,16 @@ public class Main {
     }
 
     public static User createUser() {
-        Address address = new Address("12", "liberty", "san diego", "california");
-        return new User("harry", "potter", LocalDate.now(), address);
+        Address address = new Address();
+        address.setHouseNumber("12");
+        address.setStreet("Liberty");
+        address.setCity("San Diego");
+        address.setState("California");
+        User user = new User();
+        user.setAddress(address);
+        user.setBirthday(LocalDate.now());
+        user.setFirstName("Harry");
+        user.setLastName("Potter");
+        return user;
     }
 }

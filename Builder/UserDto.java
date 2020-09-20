@@ -9,12 +9,6 @@ public class UserDto {
     private String age;
     private String address;
 
-    private UserDto(String name, String age, String address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
-
     public static UserDtoBuilder getBuilder() {
         return new UserDtoBuilder();
     }
@@ -22,6 +16,18 @@ public class UserDto {
     @Override
     public String toString() {
         return "name : " + name + "; age : " + age + "; address : " + address;
+    }
+
+    private void setName(String name) {
+        this.name = name;
+    }
+
+    private void setAge(String age) {
+        this.age = age;
+    }
+
+    private void setAddress(String address) {
+        this.address = address;
     }
 
     public static class UserDtoBuilder {
@@ -54,7 +60,9 @@ public class UserDto {
 
         public UserDto build() {
             String name = firstName + " " + lastName;
-            this.userDto = new UserDto(name, age, address);
+            this.userDto.setName(name);
+            this.userDto.setAddress(address);
+            this.userDto.setAge(age);
             return this.userDto;
         }
 

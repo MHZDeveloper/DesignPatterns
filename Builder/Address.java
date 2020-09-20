@@ -7,16 +7,24 @@ public class Address {
     private String city;
     private String state;
 
-
-    public Address(String houseNumber, String street, String city, String state) {
-        this.houseNumber = houseNumber;
-        this.street = street;
-        this.city = city;
-        this.state = state;
-    }
-
     @Override
     public String toString() {
         return houseNumber + ", " + street + ", " + city + ", " + state;
+    }
+
+    public void setHouseNumber(String houseNumber) {
+        this.houseNumber = houseNumber;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 }
