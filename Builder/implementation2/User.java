@@ -1,7 +1,8 @@
-package Builder;
+package Builder.implementation2;
 
 import java.time.LocalDate;
 
+//Entity class used to construct the DTO
 public class User {
 
     private String firstName;
@@ -13,31 +14,32 @@ public class User {
         return firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public LocalDate getBirthday() {
-        return birthday;
-    }
-
-    public Address getAddress() {
-        return address;
-    }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    public LocalDate getBirthday() {
+        return birthday;
+    }
+
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
+    }
+
+    public Address getAddress() {
+        return address;
     }
 
     public void setAddress(Address address) {
         this.address = address;
     }
+
 }
