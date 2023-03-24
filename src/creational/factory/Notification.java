@@ -1,6 +1,5 @@
-package creational.factoryMethod;
+package creational.factory;
 
 public interface Notification {
-
     void notifyUser();
 }

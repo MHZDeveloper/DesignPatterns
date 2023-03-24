@@ -1,4 +1,4 @@
-package creational.factoryMethod;
+package creational.factory;
 
 public class EmailNotification implements Notification{
 

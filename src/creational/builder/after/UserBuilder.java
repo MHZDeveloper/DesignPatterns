@@ -4,7 +4,6 @@ public class UserBuilder {
 
     private String firstName;
     private String lastName;
-    private String cin;
     private int age;
     private String phoneNumber;
 

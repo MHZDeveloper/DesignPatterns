@@ -1,8 +1,6 @@
-package creational.factoryMethod.after;
+package creational.factory.after;
 
-import creational.factoryMethod.EmailNotification;
-import creational.factoryMethod.Notification;
-import creational.factoryMethod.SMSNotification;
+import creational.factory.Notification;
 
 public class Main {
 
